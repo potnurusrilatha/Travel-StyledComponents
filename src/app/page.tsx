@@ -3,16 +3,20 @@
 import { useEffect, useState } from 'react';
 import AddTrip from '@/components/AddTrip';
 import TripList from '@/components/TripList';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// const Container = styled.div `
-// max-width: 700px;
-// margin: 3rem auto;
-// padding: 10 2rem;
-// background: 283618;
-// border-radius: 12px;
+const Container = styled.div `
+max-width: 700px;
+margin: 3rem auto;
+padding: 10 2rem;
+background: 283618;
+border-radius: 12px;
 
-// `
+h1 {
+color: #c1121f;
+}
+
+`
 
 
 type TripType = {
@@ -53,10 +57,12 @@ export default function Home() {
   };
 
   return (
-    <div>
-            <h1>Enter your  Trips Here</h1>
+    <Container><div>
+        <h1>Enter your  Trips Here</h1>
       <AddTrip onAddTrip={handleAddTrip} />
       <TripList trips={trips} />
     </div>
+    </Container>
+    
   );
 }

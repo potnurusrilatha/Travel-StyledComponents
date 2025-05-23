@@ -20,10 +20,19 @@ const Form = styled.form`
   flex-direction: column;
   gap: 1rem;
   max-width: 400px;
+  width: 400;
+  padding: 1rem;
+
+  @media only screen and (max-width:480px) {
+  padding: 0.5rem;
+  }
 `;
 
 const Label = styled.label`
   font-weight: 600;
+  display: flex;
+  flex-directon: column;
+  gap:0.5rem;
 `;
 
 const Input = styled.input`
@@ -31,9 +40,13 @@ const Input = styled.input`
   border: 1.5px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
+
   &:focus {
     outline: none;
     border-color: #0070f3;
+  }
+  @media only and screen (max-width: 480px) {
+  font-size: 0.95rem;
   }
 `;
 
@@ -46,9 +59,14 @@ const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
+
   &:hover {
-    background-color: #005bb5;
+    background-color:rgb(181, 88, 0);
   }
+    @media only screen and (max-width: 480px) {
+    padding: 0.6rem;
+    font-size: 0.95rem
+    }
 `;
 
 export default function AddTripForm({ onAddTrip }: AddTripFormProps) {
