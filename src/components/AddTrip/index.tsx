@@ -42,7 +42,7 @@ const Button = styled.button`
   color: white;
   padding: 0.7rem;
   border: none;
-  border-radius: 8px;
+  border-radius:6px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;

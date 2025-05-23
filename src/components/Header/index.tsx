@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+// import Link from 'next/link';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
@@ -26,45 +26,13 @@ const Title = styled.h1`
   margin: 0;
 `;
 
-// const Nav = styled.nav`
-//   margin-top: 1rem;
 
-//   @media(min-width: 768px) {
-//     margin-top: 0;
-//   }
-// `;
-
-// const NavList = styled.ul`
-//   display: flex;
-//   gap: 1.5rem;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// `;
-
-// const NavItem = styled.li``;
-
-// const NavLink = styled(Link)`
-//   color: white;
-//   text-decoration: none;
-//   font-weight: 600;
-
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// `;
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Title>MyTrip Journal</Title>
-      {/* <Nav>
-        <NavList>
-          <NavItem><NavLink href="/">Home</NavLink></NavItem>
-          <NavItem><NavLink href="/trips">My Trips</NavLink></NavItem>
-          <NavItem><NavLink href="/add">Add Trip</NavLink></NavItem>
-        </NavList>
-      </Nav> */}
+      <h1>MyTrip Journal</h1>
+  
     </HeaderWrapper>
   );
 };

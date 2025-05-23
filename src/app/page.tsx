@@ -42,10 +42,10 @@ export default function Home() {
     setHasMounted(true);
   }, []);
 
-  // Prevent render until client-side hydration complete
+  
   if (!hasMounted) return null;
 
-  // Add new trip handler
+
   const handleAddTrip = (newTrip: TripType) => {
     const updatedTrips = [...trips, newTrip];
     setTrips(updatedTrips);
@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <div>
-            <h1>My Trips</h1>
+            <h1>Enter your  Trips Here</h1>
       <AddTrip onAddTrip={handleAddTrip} />
       <TripList trips={trips} />
     </div>

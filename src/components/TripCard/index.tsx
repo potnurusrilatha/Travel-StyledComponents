@@ -18,6 +18,7 @@ const Card = styled.div`
 const TripsCard = ({ trip }: { trip: TripType}) => {
   return (
     <Card>
+      <h2>{trip.id}</h2>
       <h3>{trip.destination}</h3>
       <p>{trip.date}</p>
       {trip.notes && <p>{trip.notes}</p>}
