@@ -31,7 +31,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
          <StyledComponentsRegistry>
         <Header />
+        <main style={{flex: 1 }}>
         {children}
+        </main>
         <Footer />
         </StyledComponentsRegistry>
       </body>
