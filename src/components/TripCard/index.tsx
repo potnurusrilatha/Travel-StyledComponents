@@ -19,6 +19,18 @@ const Card = styled.div`
   background-color: #5D737;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin: 1rem 0;
+  @media only screen and (max-width: 768px) {
+    padding:3rem;
+    margin:0.75rem;
+}
+  @media only screen and (max-width: 480px) {
+    padding: 2rem;
+    margin: 0.5rem;
+  }
+  h2, h3 p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  }
 `;
 
 const DeleteButton = styled.button`
@@ -33,7 +45,16 @@ font-weight: 800;
   &:hover {
     background-color: #87BBA2;
   }
+@media only screen and (max-width:768px) {
+padding: 0.75rem 1.5rem;
+font-size: 0.9rem;
+}
+@media only screen and(max-width: 480px) {
+padding: 0.6rem 1.2rem;
+font-size: 0.85rem;
+}
 `
+
 
 const TripsCard = ({ trip, onDeleteTrip} : Props ) => {
   return (

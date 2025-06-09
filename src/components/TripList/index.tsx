@@ -10,6 +10,14 @@ flex-direction:column;
 gap: 1rem;
 margin-top: 1.5rem;
 padding: 0.5rem;
+@media only queries and (max-width: 768px) {
+  padding: 0.75rem;
+  gap: 0.75rem;
+}
+@media only queries and (max-width: 480px) {
+padding: 0.5rem;
+gap: 0.5rem;
+}
 `
 
 type TripType = {

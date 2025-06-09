@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.footer 
 `
-background-color: #4DA8DA;
+background-color: #588175;
 padding: 20px;
 text-align: center;
 border-top: 1px solid #dee2e6;
@@ -16,7 +16,7 @@ box-shadow: 0 -2px 4px rgba(0, 0.1, 1, 0.1);
     font-weight: 700;
   }
   @media only screen and (max-width: 768px) {
-    padding: 18px;
+    padding: 12px;
       p {
         font-size: 1rem;
       }

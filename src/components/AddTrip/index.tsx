@@ -16,20 +16,15 @@ type AddTripFormProps = {
 
 const Form = styled.form`
   background-color: #87BBA2;
-  margin-bottom: 1.5rem;
-  margin-left: 10rem;
+  margin: 0 auto 1.5rem auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 400px;
-  width: 400px;
+  width: 100%;
   padding: 1rem;
- 
-
-  @media only screen and (max-width: 480px) {
-  padding: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+ @media only screen and (max-width: 480px) {
+  padding: 0.75rem;
   }
 `;
 
@@ -50,7 +45,7 @@ const Input = styled.input`
     outline: none;
     border-color: #0070f3;
   }
-  @media only and screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
   font-size: 0.95rem;
   }
 `;
@@ -70,7 +65,7 @@ const Button = styled.button`
   }
     @media only screen and (max-width: 480px) {
     padding: 0.6rem;
-    font-size: 0.95rem
+    font-size: 0.95rem;
     }
 `;
 
